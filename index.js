@@ -1,3 +1,6 @@
-// run `node index.js` in the terminal
+const http=require('http');
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const server=http.createServer(req,res)=>{
+    res.end("connected");
+}
+server.listen(8000)
